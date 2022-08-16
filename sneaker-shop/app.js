@@ -89,7 +89,12 @@ function  addProductTocart(title, price, productImg){
     // console.log(cartShopBox)
     var cartItem = document.getElementsByClassName('cart-content')[0];
     var cartItemNames = cartItem.getElementsByClassName('cart-product-title')
-    
+
+    // for(var i=0; i<cartItemNames.length; i++){
+    //     if(cartItemNames[i].innerText == title){
+    //         alert('Add Product Successfully!!!!')
+    //     }
+    // }
 
     var cartBoxContent = `<img src="${productImg}" alt="" class="cart-img">
                     <div class="detail-box">
@@ -106,11 +111,7 @@ function  addProductTocart(title, price, productImg){
     cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged);
 
 
-    for(var i=0; i<cartItemNames.length; i++){
-        if(cartItemNames[i].innerText == title){
-            alert('Add Product Successfully!!!!')
-        }
-    }
+
 }
 
 
